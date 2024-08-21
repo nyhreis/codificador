@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+    background-image: url("dog-desktop-pictures-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h2{
+    color: #ffdaff;
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    background: rgba(255, 255, 255, 0.014);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.178);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.027);
+}
+
+.input-area, .output-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    
+
+}
+
+input{
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 75px;
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.164);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.178);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.027);
+}
+
+textarea{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 300px;
+    
+
+    background: rgba(255, 255, 255, 0.164);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.178);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.027);
+}
+
+::placeholder{
+    color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button {
+    background-color: #750b75;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0;
+    width:  120px;
+
+}
+
+button:hover {
+    background-color: #750b75;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* modo responsivo */
+
+@media (max-width: 768px) {
+.container {
+padding: 20px;
+flex-direction: column;
+width: 100%;
+max-width: none;
+}
+
+input, textarea {
+width: 100%; /* Ajusta para ocupar toda a largura */
+}
+
+h2 {
+font-size: 18px;
+}
+
+button {
+width: 100%; /* Botões ocupam a largura total */
+}
+}
